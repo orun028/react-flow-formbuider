@@ -1,0 +1,128 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~formiojs/dist/formio.full.min.css';
+
+body {
+  background-color: #f1f1f1;
+}
+
+#group-container-basic,
+#group-container-advanced,
+#group-container-layout,
+#group-container-premium,
+#group-container-data {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.form-label {
+  margin-bottom: .15rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.formio-dialog.formio-dialog-theme-default .formio-dialog-content {
+  width: 100%;
+  height: 100%;
+  font-size: inherit;
+  border-radius: 0;
+}
+
+.component-settings {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.form-builder-panel {
+  border-radius: 0;
+}
+
+.form-builder-panel>.card-header {
+  border: none !important;
+}
+
+.builder-sidebar>div .form-builder-panel+.form-builder-panel {
+  margin-top: 5px;
+}
+
+.formcomponents .formcomponent {
+  padding: .5rem 1rem;
+  opacity: .80;
+  border: 0;
+}
+
+/* flow css */
+/* .react-flow {
+  min-height: 900px;
+} */
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #fff !important;
+  border-color: #000000 !important;
+}
+
+.react-flow__handle-top {
+  top: -5px !important;
+}
+
+.react-flow__handle-bottom {
+  bottom: -5px !important;
+}
+
+.react-flow__node {
+  border-radius: 5px !important;
+  border-width: 1.5px !important;
+  border-color: rgb(84, 84, 84);
+  border-style: solid;
+  padding: 10px;
+  width: 150px;
+  font-size: 12px;
+  color: #222;
+  background-color: white;
+  opacity: .85;
+}
+
+.react-flow__node.selected {
+  opacity: 1;
+  box-shadow: 1px 1px 4px 4px #f1f1f1;
+}
+
+.react-flow__node-form{
+  border-color: #c196da;
+}
+
+.react-flow__node-table{
+  border-color: #88ca86;
+}
+
+.react-flow__node-condition{
+  border-color: #caa786;
+}
+
+.react-flow__node-email{
+  border-color: #86a3ca;
+}
+
+.flow-context-menu {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  position: absolute;
+}
+
+.flow-context-item {
+  font-size: 12px;
+  cursor: pointer;
+  padding: .15rem 1rem;
+}
